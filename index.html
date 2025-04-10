@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Bayu Herlambang</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Bayu Herlambang</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic-1.png" alt="Bayu Herlambang profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Bayu Herlambang</h1>
+        <p class="section__text__p2">Informatics Engineering Student</p>
+        <div class="btn-container">
+          <a href="./assets/Curriculum Vitae.pdf" download class="btn btn-color-2">Download CV</a>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/Gmail.png" alt="My Gmail" class="icon" onclick="location.href='mailto:bayuherlambang407@gmail.com'" />
+          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/bayu-herlambang-blackjavanesee/'" />
+          <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/blackjavanesee'" />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/about-pics-transformed.png" alt="Profile picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/about.png" alt="About icon" class="icon" />
+              <h3>About</h3>
+              <p>
+                Hello, I'm Bayu, a working professional currently pursuing a degree in Informatics Engineering in my 3rd semester at Esa Unggul University. I have a strong passion for software development and web technologies, and I enjoy tackling complex problems with innovative solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#education'" />
+    </section>
+    <section id="education">
+      <p class="section__text__p1">My Academic Journey</p>
+      <h1 class="title">Education</h1>
+      <div class="education-container">
+        <div class="details-container">
+          <img src="./assets/University-icon.png" alt="High School icon" class="icon" />
+          <h2>SMA 72 Jakarta</h2>
+          <h3>Science Major (MIPA)</h3>
+          <p>During my high school years, I developed a strong foundation in mathematics and science, which sparked my interest in technology and problem-solving.</p>
+        </div>
+        <div class="details-container">
+          <img src="./assets/University-icon.png" alt="University icon" class="icon" />
+          <h2>Esa Unggul University</h2>
+          <h3>Bachelor's in Informatics Engineering</h3>
+          <p>Currently, I am pursuing my degree in Informatics Engineering, where I am exploring the world of software development, web technologies, and innovative solutions in the tech industry.</p>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>    
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <video width="100%" controls>
+                <source src="./assets/project1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <video width="100%" controls>
+                <source src="./assets/project2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-container">
+        <div class="contact-info">
+          <img src="./assets/Gmail.png" alt="Email Icon" class="icon" />
+          <p><a href="mailto:bayuherlambang407@gmail.com" target="_blank">bayuherlambang407@gmail.com</a></p>
+        </div>
+        <div class="contact-info">
+          <img src="./assets/linkedin.png" alt="LinkedIn Icon" class="icon" />
+          <p><a href="https://www.linkedin.com/in/bayu-herlambang-blackjavanesee/" target="_blank">LinkedIn</a>
+          </p>
+        </div>
+        <div class="contact-info">
+          <img src="./assets/github.png" alt="Github Icon" class="icon" />
+          <p><a href="https://github.com/blackjavanesee" target="_blank">GitHub</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Bayu Herlambang. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
